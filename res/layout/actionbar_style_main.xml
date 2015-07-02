@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/IDC_Button_ActionBar_Options"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/IDC_TextView_ActionBar_title"
+            android:layout_toRightOf="@+id/IDC_Button_ActionBar_Options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="23dp"
+            android:textColor="@color/white"
+            android:text="@string/app_name" />
+
+        <Button
+            android:id="@+id/IDC_Button_ActionBar_Setting"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">账号管理</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="account_name">账号名称</string>
+    <string name="account_id">用户名称</string>
+    <string name="account_password">用户密码</string>
+    <string name="account_note">账号备注</string>
+    
+    <string name="account_name_invalid">账户名称不合法</string>
+    <string name="account_id_invalid">用户名称不合法</string>
+    <string name="account_password_invalid">用户密码不合法</string>
+    <string name="account_note_invalid">账号备注不合法</string>
+    
+    <string name="account_name_test">淘宝</string>
+    <string name="account_id_test">chenjianjk</string>
+    <string name="account_password_test">C00873</string>
+    <string name="account_note_test">不世剑客</string>
+    <string name="account_save">保存</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="edit">编辑</string>
+    <string name="sync">同步数据</string>
+    <string name="setting">设置</string>
+    
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="alert_delete">确认要删除所选择的账号吗？</string>
+    <string name="alert_delete_empty">没有选择要删除的账号</string>
+    <string name="logoin_name_should_not_empty">用户名不能为空</string>
+    <string name="logoin_password_should_not_empty">密码不能为空</string>
+    <string name="logoin_error">用户名或密码错误</string>
+    <string name="account_not_exist">账户不存在,是否创建一个新的账户(已有账户将被覆盖)</string>
+    
+</resources>

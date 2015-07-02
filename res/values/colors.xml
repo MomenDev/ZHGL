@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_color">#FF425983</color>
+    <color name="selected_color">#FF425983</color>
+    <color name="pressed_color">#FF5C7CB5</color>
+    <color name="list_bg">#33505050</color>
+    <color name="blue">#0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#0FF0FF</color>
+    <color name="yelloW">#FFFF00</color>
+    <color name="white">#FFFFFFFF</color><!-- white_color -->
+    <color name="blue_color">#FF52E4FE</color>
+    <color name="black_color">#FF000000</color>
+    <color name="gray_color"> #FF555555</color>     
+    <color name="lightgray1">#333333</color><!-- lightgray -->
+    <color name="lightblue2">#0295FA</color><!-- lightblue -->
+
+    <color name="gray">#AAAAAA</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue_bg">#0000AA</color>
+    <color name="blue_mg">#00AAFF</color>
+    
+    <color name="skyblue">#87CEEB</color><!--skyblue -->
+    <color name="aliceblue">#F0F8FF</color><!--aliceblue-->
+    <color name="transparent">#00000000</color><!-- alpha_00 -->
+    <color name="transparent_background">#50000000</color><!-- trans -->
+    <color name="darkgray">#808080</color>
+    <color name="Grey">#BEBEBE</color>
+    <color name="background">#E5E5E5</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="black">#000000</color>
+    <color name="lightred">#BE0000</color>
+    <color name="LightGray_color">#E2E2E2</color>
+    <color name="orange">#FFA500</color>
+    <color name="translucency">#E0000000</color>
+    <color name="lucensy">#00000001</color>
+    <color name="yy">#FFFF00</color>
+    <color name="mainmenu_title_color">#FFE200</color>  <!-- title color -->
+    <color name="mainmenu_list_focus">#B80000</color>  <!-- focus item text color -->
+    <color name="mainmenu_list_focused">#000000</color>  <!--last focus item -->
+    <color name="mainmenu_list_disable">#4DFFFFFF</color> <!--disable item -->
+    <color name="mainmenu_list_normal">#FFFFFF</color> <!--normal item -->
+    <color name="mainmenu_list_clicked">#FFEC70</color> <!--click item,window focus false  -->
+    <color name="scan_no_bg1">#26c9c9c9</color>
+    <color name="scan_no_bg2">#2e666666</color>
+    <color name="init_install_bg">#c0f5f5f5</color>
+</resources>
