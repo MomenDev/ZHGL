@@ -1,4 +1,4 @@
-package com.android.zhgl.menu;
+package com.android.zhgl.ui;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -54,7 +54,7 @@ public class UserAccountListActivity extends Activity {
 		mListView.setAdapter(mAccountAdapter);
 		mListView.setOnItemClickListener(mAccountAdapter);
 
-		mActionBarMain = new ActionBarMain(this, R.string.sync);
+		mActionBarMain = new ActionBarMain(this, R.string.setting);
 		mActionBarMain.setSettingClickListener(mClickListener);
 
 		mBtAccountAdd.setOnClickListener(mAccountClickListener);
@@ -67,8 +67,10 @@ public class UserAccountListActivity extends Activity {
 		public void onClick(View view) {
 			switch (view.getId()) {
 			case R.id.IDC_Button_ActionBar_Setting:
-				ZHGLBuffer.getInstance().syncDatabase();
-				mAccountAdapter.notifyDataSetChanged();
+//				ZHGLBuffer.getInstance().syncDatabase();
+//				mAccountAdapter.notifyDataSetChanged();
+				Intent intent = new Intent(UserAccountListActivity.this, SettingActivity.class);
+				startActivity(intent);
 				break;
 			default:
 				break;
@@ -154,6 +156,7 @@ public class UserAccountListActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
+		ZHGLBuffer.getInstance().mZhglAccount.logout();
 	}
 
 }

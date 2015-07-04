@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.zhgl"
     android:versionCode="1"
-    android:versionName="1.1" >
+    android:versionName="1.2" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/UserAccountTheme" >
         <activity
-            android:name="com.android.zhgl.menu.LoginActivity"
+            android:name="com.android.zhgl.ui.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,15 +26,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.zhgl.menu.UserAccountListActivity"
+            android:name="com.android.zhgl.ui.UserAccountListActivity"
             android:theme="@style/UserAccountTheme" >
         </activity>
         <activity
-            android:name="com.android.zhgl.menu.UserAccountDetailActivity"
+            android:name="com.android.zhgl.ui.UserAccountDetailActivity"
             android:theme="@style/UserAccountTheme" >
         </activity>
         <activity
-            android:name="com.android.zhgl.menu.UserAccountEditActivity"
+            android:name="com.android.zhgl.ui.UserAccountEditActivity"
+            android:theme="@style/UserAccountTheme" >
+        </activity>
+        <activity
+            android:name="com.android.zhgl.ui.SettingActivity"
+            android:theme="@style/UserAccountTheme" >
+        </activity>
+        <activity
+            android:name="com.android.gesturelocker.ui.GestureLockActivity"
             android:theme="@style/UserAccountTheme" >
         </activity>
     </application>

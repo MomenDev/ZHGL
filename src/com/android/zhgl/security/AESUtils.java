@@ -1,4 +1,4 @@
-package com.android.zhgl;
+package com.android.zhgl.security;
 
 import java.security.SecureRandom;
 
@@ -8,16 +8,10 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-/**
- * @author carlos carlosk@163.com
- * @version 创建时间：2012-5-17 上午9:48:35 类说明
- */
-
 public class AESUtils {
     public static final String TAG = "AESUtils";
 
     public static String encrypt(String seed, String clearText) {
-//         DBGUtils.menuPrint("加密前的seed=" + seed + ",内容为:" + clearText);
         byte[] result = null;
         try {
             byte[] rawkey = getRawKey(seed.getBytes());
@@ -26,20 +20,17 @@ public class AESUtils {
             e.printStackTrace();
         }
         String content = toHex(result);
-//         DBGUtils.menuPrint("加密后的内容为:" + content);
         return content;
 
     }
 
     public static String decrypt(String seed, String encrypted) {
-//         DBGUtils.menuPrint("解密前的seed=" + seed + ",内容为:" + encrypted);
         byte[] rawKey;
         try {
             rawKey = getRawKey(seed.getBytes());
             byte[] enc = toByte(encrypted);
             byte[] result = decrypt(rawKey, enc);
             String coentn = new String(result);
-//             DBGUtils.menuPrint("解密后的内容为:" + coentn);
             return coentn;
         } catch (Exception e) {
             e.printStackTrace();

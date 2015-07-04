@@ -1,4 +1,4 @@
-package com.android.zhgl.menu;
+package com.android.zhgl.ui;
 
 import android.app.Activity;
 import android.content.Intent;

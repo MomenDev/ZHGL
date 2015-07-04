@@ -3,6 +3,7 @@ package com.android.zhgl;
 import java.io.Serializable;
 
 import com.android.zhgl.database.ZHGLBuffer;
+import com.android.zhgl.security.AESUtils;
 
 
 /**

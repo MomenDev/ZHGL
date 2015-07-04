@@ -1,4 +1,4 @@
-package com.android.zhgl.menu;
+package com.android.zhgl.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,7 +17,6 @@ import com.android.zhgl.Constant;
 import com.android.zhgl.DBGUtils;
 import com.android.zhgl.R;
 import com.android.zhgl.UserAccount;
-import com.android.zhgl.ZHGLAccount;
 import com.android.zhgl.database.ZHGLBuffer;
 
 public class UserAccountAdapter extends BaseAdapter implements OnItemClickListener{

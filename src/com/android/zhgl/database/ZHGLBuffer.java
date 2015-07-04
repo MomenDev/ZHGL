@@ -16,10 +16,10 @@ import java.util.LinkedList;
 import android.annotation.SuppressLint;
 import android.os.Environment;
 
-import com.android.zhgl.AESUtils;
 import com.android.zhgl.DBGUtils;
 import com.android.zhgl.UserAccount;
 import com.android.zhgl.ZHGLAccount;
+import com.android.zhgl.security.AESUtils;
 
 public class ZHGLBuffer {
 
@@ -208,10 +208,8 @@ public class ZHGLBuffer {
 		String ret = reader.readLine();
 		boolean hasFoundZhglAccount = false;
 		while(ret != null && !ret.equals(ZHGL_SUFFIX)){
-			DBGUtils.menuPrint("find a String:" + ret);
 			mZhglAccount.loadEncryptCode(ret);
 			hasFoundZhglAccount = true;
-			DBGUtils.menuPrint("find a ZHGLAccount:" + mZhglAccount);
 			ret = reader.readLine();
 		}
 		return hasFoundZhglAccount;
@@ -226,7 +224,6 @@ public class ZHGLBuffer {
 		
 		String ret = reader.readLine();
 		while(ret != null && !ret.equals(USER_SUFFIX)){
-			DBGUtils.menuPrint("find a String:" + ret);
 			String[] arr = ret.split(SEPRATTOR);
 			if(arr.length < 4){
 				DBGUtils.menuErrPrint("find a bad UserAccount:"+ret);
@@ -241,10 +238,20 @@ public class ZHGLBuffer {
 			String identification = AESUtils.decrypt(mZhglAccount.mPassword, arr[1]);
 			String password = AESUtils.decrypt(mZhglAccount.mPassword, arr[2]);
 			UserAccount account = new UserAccount(name, identification, password,note);
-			mUserAccounts.add(account);
+			
+			boolean notfound = true;
+			for (UserAccount tmpAccount : mUserAccounts) {
+				if(tmpAccount.equals(account))
+				{
+					notfound = false;
+					break;
+				}
+			}
+			if(notfound)
+				mUserAccounts.add(account);
+			
 			ret = reader.readLine();
 
-			DBGUtils.menuPrint("find a UserAccount:" + account);
 		}
 		return true;
 	}
